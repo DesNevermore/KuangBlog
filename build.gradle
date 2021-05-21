@@ -15,8 +15,14 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.4'
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+	implementation 'org.springframework.boot:spring-boot-starter-aop'
+	implementation 'org.springframework.boot:spring-boot-autoconfigure'
+	implementation 'org.springframework.boot:spring-boot-configuration-processor'
+	implementation group: 'com.baomidou', name: 'mybatis-plus-boot-starter', version: '3.4.2'
+
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.20'
 	runtimeOnly 'mysql:mysql-connector-java'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
